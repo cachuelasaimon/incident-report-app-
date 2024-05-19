@@ -9,7 +9,12 @@ import {
 import { DatePickerElement } from 'src/components';
 
 const IncidentReport: FC = () => {
-  const formContext = useForm();
+  const formContext = useForm({
+    defaultValues: {
+      status: 'Pending',
+    },
+  });
+
   // TODO: Fetch Staff
   // TODO: Fetch Students
 
